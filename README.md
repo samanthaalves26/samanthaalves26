@@ -1,6 +1,7 @@
-💻 Samantha Alves | Fullstack Developer
+💻 Samantha Alves | Junior Data Analyst
 
-Welcome to my GitHub! Here are some of my professional projects, where I apply my skills in web and software development.
+Welcome to my GitHub! 🚀
+Here you will find projects developed during my Technology in Data Intelligence journey, where I explore data collection, processing, modeling, and visualization to transform information into valuable insights. My work includes data cleaning, exploratory analysis, dashboards, and statistical correlations, always aiming to support data-driven decision making.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 <div style="display: inline_block"><br>
@@ -22,7 +23,10 @@ Welcome to my GitHub! Here are some of my professional projects, where I apply m
 
 <h4 align="center">Visitor's count :eyes:</h4>
 
-<p align="center"><img src="https://profile-counter.glitch.me/{samanthaalves26}/count.svg" alt="samanthaalves26 :: Visitor's Count" /></p>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=samanthaalves26&label=Profile%20views&color=ff69b4&style=for-the-badge" alt="Profile Views" />
+</p>
+
 
 <div align="center">
   <img 
@@ -36,6 +40,14 @@ Welcome to my GitHub! Here are some of my professional projects, where I apply m
     src="https://github-readme-stats.vercel.app/api/top-langs/?username=samanthaalves26&theme=tokyonight&layout=compact&custom_title=Tecnologias&langs_count=9" 
   />
 </div>
+
+---
+## 🐍 Snake Animation
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/samanthaalves26/samanthaalves26/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/samanthaalves26/samanthaalves26/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/samanthaalves26/samanthaalves26/output/github-contribution-grid-snake.svg">
+</picture>
 
 ---
 
