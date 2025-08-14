@@ -13,12 +13,14 @@ jobs:
       # Baixa o repositório
       - uses: actions/checkout@v2
 
-      # Gera os arquivos da cobrinha
+      # Gera a versão clara e a escura
       - uses: Platane/snk@master
         with:
           github_user_name: samanthaalves26
-          gif_out_path: dist/github-contribution-grid-snake.gif
-          svg_out_path: dist/github-contribution-grid-snake.svg
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.gif
 
       # Publica no branch output
       - uses: crazy-max/ghaction-github-pages@v2.1.3
