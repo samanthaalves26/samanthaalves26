@@ -1,29 +1,41 @@
-name: Snake Game
+name: generate animation
 
 on:
+  # Executa automaticamente a cada 24h
   schedule:
-    # Atualiza a cada 5 horas
-    - cron: "0 */5 * * *"
+    - cron: "0 */24 * * *"
+
+  # Permite rodar manualmente
   workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      # Baixa o repositório
-      - uses: actions/checkout@v2
+  # Executa sempre que houver push na branch master
+  push:
+    branches:
+      - master
 
-      # Gera a versão clara e a escura
-      - uses: Platane/snk@master
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # baixa histórico completo
+
+      - name: generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: samanthaalves26
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-            dist/github-contribution-grid-snake.gif
 
-      # Publica no branch output
-      - uses: crazy-max/ghaction-github-pages@v2.1.3
+      - name: Push snake to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
